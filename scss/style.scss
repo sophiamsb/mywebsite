@@ -1,6 +1,11 @@
 @font-face {
-  font-family: "signus";
-  src: url("/dist/fonts/SIGNUS_LED-R.ttf") format("truetype");
+  font-family: "SIGNUS_LED-R";
+  src: url("fonts/signus_led/SIGNUS_LED-R.eot");
+  src: url("fonts/signus_led/SIGNUS_LED-R.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/signus_led/SIGNUS_LED-R.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
 }
 
 :root {
@@ -26,12 +31,12 @@
 }
 
 @import "projects";
+@import "mobile";
 
 html {
   box-sizing: border-box;
   font-family: "helvetica";
-  text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 2vw;
   letter-spacing: 0.1rem;
 
   body {
@@ -52,15 +57,16 @@ html {
 }
 
 .green {
+  z-index: -1;
   width: 100vw;
   height: 100vh;
-  background-color: rgb(114, 197, 155);
+  background-color: rgb(235, 37, 37);
   opacity: 0.5;
   position: fixed;
 }
 
 marquee {
-  font-family: "signus";
+  font-family: "SIGNUS_LED-R";
   color: red;
   text-shadow: 0 0 5px #f00, 0 0 5px #f00;
   font-size: 60px;
@@ -73,7 +79,6 @@ marquee {
 }
 
 .menu {
-  position: absolute;
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto;
@@ -87,23 +92,17 @@ marquee {
     height: 50vh;
     background-color: lightgray;
     border-radius: 50%;
-    line-height: 14em;
+    line-height: 3em;
+    text-decoration: none;
 
     p {
-      margin: 0;
+      text-transform: uppercase;
+      margin: auto;
+      text-align: center;
       color: transparent;
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
       background-clip: text;
       -webkit-background-clip: text;
-      padding: 2vmin;
       font-size: calc(1.25vmin + 1.25rem);
-      text-align: center;
-      text-overflow: ellipsis;
-      white-space: nowrap;
       @include background;
     }
   }

@@ -1,0 +1,13 @@
+@media (max-width: 700px) {
+  html {
+    font-size: 3.5vw !important;
+  }
+  .menu {
+    display: block !important;
+
+    a {
+      width: 100% !important;
+      margin-bottom: 10px !important;
+    }
+  }
+}

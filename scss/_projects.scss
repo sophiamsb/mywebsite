@@ -1,38 +1,23 @@
-.back {
-  z-index: 2;
-  top: 2vh;
-  left: 2vw;
-  position: absolute;
-  width: 15vw;
-  height: 10vh;
-  background-color: lightgray;
-  border-radius: 50%;
-  text-align: center;
+header {
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
 
   a {
     text-decoration: none;
-    p {
-      margin: 0;
-      color: transparent;
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-clip: text;
-      -webkit-background-clip: text;
-      padding: 2vmin;
-      font-size: calc(1.25vmin + 1.25rem);
-      text-overflow: ellipsis;
-      @include background;
-    }
+    color: black;
   }
 }
+
 .photobook {
   position: absolute;
   z-index: 1;
-  padding: 5em;
+  padding: 2vw;
   img {
     width: 100%;
   }
+}
+.info {
+  padding: 2vw;
 }
