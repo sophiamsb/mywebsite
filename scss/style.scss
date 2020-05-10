@@ -40,20 +40,62 @@ html {
   letter-spacing: 0.1rem;
 
   body {
-    background-image: var(--gradient);
-    @include background;
     padding: 0;
     margin: 0;
     width: 100vw;
     height: 100vh;
   }
 }
+
+header {
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+
+  a {
+    text-decoration: none;
+    color: black;
+    padding-left: 2em;
+  }
+}
+
+.gradient {
+  top: 0;
+  width: 100vw;
+  height: 1vh;
+  position: fixed;
+  z-index: -1;
+
+  svg {
+    position: absolute;
+    width: 100%;
+    height: 90px;
+    @include background;
+  }
+}
+
+.gradient2 {
+  margin: auto;
+  display: block;
+  width: 100vw;
+  height: 10vh;
+  position: absolute;
+  z-index: -1;
+
+  svg {
+    position: absolute;
+    @include background;
+  }
+}
+
 .blue {
   width: 100vw;
   height: 100vh;
   background-color: rgb(41, 32, 124);
   opacity: 0.5;
   position: fixed;
+  z-index: -1;
 }
 
 .green {
@@ -63,57 +105,4 @@ html {
   background-color: rgb(235, 37, 37);
   opacity: 0.5;
   position: fixed;
-}
-
-marquee {
-  font-family: "SIGNUS_LED-R";
-  color: red;
-  text-shadow: 0 0 5px #f00, 0 0 5px #f00;
-  font-size: 60px;
-  position: absolute;
-  left: 50vw;
-  bottom: 100px;
-  background-color: black;
-  line-height: 0.8em;
-  width: 400px;
-}
-
-.menu {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto;
-  grid-gap: 10px;
-  padding: 4em;
-
-  a {
-    display: flex;
-    position: relative;
-    width: 40vw;
-    height: 50vh;
-    background-color: lightgray;
-    border-radius: 50%;
-    line-height: 3em;
-    text-decoration: none;
-
-    p {
-      text-transform: uppercase;
-      margin: auto;
-      text-align: center;
-      color: transparent;
-      background-clip: text;
-      -webkit-background-clip: text;
-      font-size: calc(1.25vmin + 1.25rem);
-      @include background;
-    }
-  }
-}
-
-@keyframes roll {
-  from {
-    background-position: 0% 0%;
-  }
-
-  to {
-    background-position: 100% 100%;
-  }
 }
