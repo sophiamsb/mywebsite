@@ -21,30 +21,38 @@
     white,
     red
   );
+  --backgroundColor: #000;
+  --borderWidth: 5px;
+  --gradient2: linear-gradient(to bottom, rgb(0, 30, 96), #0027ff, yellow, red);
 }
 
 @mixin background {
   background-image: var(--gradient);
   background-size: 200% 200%;
-  background-position: top left;
+  background-position: top right;
   animation: roll 6s infinite linear;
 }
 
 @import "projects";
+@import "thesis";
 @import "mobile";
 
 html {
   box-sizing: border-box;
   font-family: "helvetica";
   font-size: 2vw;
-  letter-spacing: 0.1rem;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 
-  body {
-    padding: 0;
-    margin: 0;
-    width: 100vw;
-    height: 100vh;
+  ::-webkit-scrollbar {
+    display: none;
   }
+}
+body {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
 }
 
 header {
@@ -87,22 +95,4 @@ header {
     position: absolute;
     @include background;
   }
-}
-
-.blue {
-  width: 100vw;
-  height: 100vh;
-  background-color: rgb(41, 32, 124);
-  opacity: 0.5;
-  position: fixed;
-  z-index: -1;
-}
-
-.green {
-  z-index: -1;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgb(235, 37, 37);
-  opacity: 0.5;
-  position: fixed;
 }

@@ -1,0 +1,243 @@
+@mixin background2 {
+  background-image: var(--gradient2);
+  background-size: 100% 100%;
+}
+
+.container {
+  background-color: white;
+  overflow-x: hidden;
+}
+.title {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
+  height: 50%;
+  border-radius: 10px;
+  background-image: url("/assets/img/thesis/title.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-block-end: 10em;
+
+  p {
+    backdrop-filter: invert(0.7);
+    font-size: 10vw;
+    text-transform: uppercase;
+    padding: 8px 12px 9px;
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    mix-blend-mode: difference;
+    color: blue;
+    filter: drop-shadow(0.07em 0.07em rgb(255, 0, 21));
+  }
+}
+
+.menu {
+  position: fixed;
+  bottom: 3%;
+  left: 0;
+  margin-left: 40px;
+  z-index: 1;
+
+  .spectrum {
+    margin: 0;
+    height: 400px;
+    width: 10px;
+    position: absolute;
+    @include background2;
+    position: relative;
+  }
+  ul {
+    width: 200px;
+    height: 400px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 7px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    line-height: 40px;
+  }
+  li {
+    font-size: 10px;
+    letter-spacing: 0.05rem;
+
+    a {
+      text-decoration: none;
+      color: #000;
+    }
+  }
+}
+
+.headline {
+  position: relative;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  width: fit-content;
+  height: fit-content;
+  display: block;
+
+  h1 {
+    padding: 0.1em;
+    font-size: 4vw;
+    color: black;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+  }
+}
+
+h2 {
+  text-align: center;
+  font-size: 2vw;
+}
+
+.textblock {
+  position: relative;
+  display: block;
+  margin-block-start: 2em;
+  margin-block-end: 2em;
+  margin-inline-start: 10em;
+  margin-inline-end: 10em;
+  line-height: 1.6em;
+
+  .hypertext {
+    position: absolute;
+    height: auto;
+    width: 15vw;
+    right: -27%;
+    top: 0;
+    font-size: 0.5em;
+    word-wrap: break-word;
+    line-height: 1.5em;
+    margin-block-end: 20%;
+    text-shadow: 2px 2px 5px rgba(0, 28, 218, 0.566);
+    animation: float;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+}
+
+@keyframes float {
+  0% {
+    text-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(10px);
+  }
+  50% {
+    text-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+    transform: translatey(-10px);
+  }
+  100% {
+    text-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(10px);
+  }
+}
+
+.citation {
+  font-weight: bold;
+  margin: 110px;
+  padding: 2em;
+  line-height: 1.6em;
+  border: 1px solid;
+  background-color: #fcfc9a;
+
+  .caption {
+    margin: 0;
+    padding: 1em;
+    line-height: 1.6em;
+
+    float: right;
+    color: grey;
+    font-size: 0.5em;
+    a {
+      text-decoration: none;
+      color: grey;
+    }
+  }
+}
+.bcontainer {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 50%;
+
+  .bubble {
+    position: relative;
+    width: fit-content;
+    margin-bottom: 40px;
+    padding: 15px;
+    line-height: 24px;
+    border-radius: 40px;
+    text-align: center;
+    font-size: 0.6em;
+    background: chartreuse;
+    color: #000;
+  }
+
+  .bubble:before,
+  .bubble:after {
+    content: " ";
+    position: absolute;
+    width: 0;
+    height: 0;
+  }
+
+  .speech:after {
+    left: 38px;
+    bottom: -30px;
+    border: 15px solid;
+    border-color: chartreuse transparent transparent chartreuse;
+  }
+}
+
+.picture {
+  position: relative;
+  z-index: 1;
+  margin: 110px;
+  img {
+    width: 100%;
+  }
+  .caption {
+    margin: 20px;
+    font-weight: thin;
+    float: right;
+    color: grey;
+    font-size: 0.5em;
+  }
+}
+.picture2 {
+  width: 80%;
+  height: fit-content;
+  margin: 110px;
+
+  .knockoff {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .equal {
+    height: 20vh;
+    p {
+      margin: 0;
+      padding: 0;
+      font-size: 10em;
+      text-align: center;
+      line-height: 0.6em;
+    }
+  }
+  .caption {
+    text-align: right;
+    color: grey;
+    font-size: 0.5em;
+
+    width: 80vw;
+    position: relative;
+  }
+}
