@@ -12,7 +12,6 @@
 section {
   overflow: auto;
   width: 50vw;
-  height: fit-content;
 }
 
 .grid-project-item {
@@ -26,7 +25,6 @@ section {
 .project-header {
   display: flex;
   margin: var(--gap);
-  height: var(--item-height);
 }
 
 .small-box {
@@ -70,6 +68,17 @@ section {
 }
 
 .project-info {
+  display: inline-block;
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 25px 30px 30px 30px;
+  width: calc(100% - 80px);
+  margin: var(--gap);
+  max-width: 650px;
+  text-align: left;
+  line-height: 1.2;
+  letter-spacing: 0.2px;
+
   p {
     padding: var(--gap);
   }

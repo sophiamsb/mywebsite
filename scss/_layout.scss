@@ -35,7 +35,7 @@
 
 @keyframes roll {
   from {
-    background-position: 0% 0%;
+    background-positiogin: 0% 0%;
   }
 
   to {
@@ -54,15 +54,15 @@
 header {
   display: flex;
   align-items: center;
-  marquee {
-    height: var(--row-height);
-    width: 100%;
-    font-family: "SIGNUS_LED-R";
-    color: var(--red);
-    font-size: var(--size-h2);
-    position: absolute;
-    z-index: 1;
-  }
+}
+
+marquee {
+  width: 100%;
+  height: var(--row-height);
+  font-family: "SIGNUS_LED-R";
+  color: var(--red);
+  font-size: var(--size-h2);
+  position: absolute;
 }
 
 .box {
@@ -78,6 +78,7 @@ header {
 .about {
   height: var(--row-height);
   width: calc(var(--column-width) * 2);
+  z-index: 1;
 
   p {
     padding: var(--gap);
