@@ -6,31 +6,24 @@
 .container {
   background-color: white;
   overflow-x: hidden;
+  width: 100%;
 }
 .title {
   position: relative;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 35%;
-  height: 50%;
-  border-radius: 10px;
-  background-image: url("/assets/img/thesis/title.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-block-end: 10em;
+  height: 300px;
+  line-height: var(--line-height-title);
+  padding-top: var(--gap);
 
   p {
+    font-size: var(--size-h1);
     backdrop-filter: invert(0.7);
-    font-size: 10vw;
+    text-align: center;
     text-transform: uppercase;
-    padding: 8px 12px 9px;
     width: fit-content;
     height: fit-content;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    mix-blend-mode: difference;
     color: blue;
     filter: drop-shadow(0.07em 0.07em rgb(255, 0, 21));
   }
@@ -41,7 +34,7 @@
   bottom: 3%;
   left: 0;
   margin-left: 40px;
-  z-index: 1;
+  z-index: 2;
 
   .spectrum {
     margin: 0;
@@ -79,33 +72,34 @@
   text-align: center;
   margin-right: auto;
   margin-left: auto;
+  margin-top: calc(var(--gap) * 3);
   width: fit-content;
-  height: fit-content;
+  height: 80px;
   display: block;
 
-  h1 {
+  p {
     padding: 0.1em;
-    font-size: 4vw;
+    font-size: var(--size-h2);
     color: black;
     text-decoration-line: underline;
     text-decoration-style: wavy;
   }
 }
 
-h2 {
+.title2 {
   text-align: center;
-  font-size: 2vw;
+  font-size: var(--size-h3);
+  height: 80px;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
 }
 
 .textblock {
   position: relative;
   display: block;
-  margin-block-start: 2em;
-  margin-block-end: 2em;
-  margin-inline-start: 10em;
-  margin-inline-end: 10em;
-  line-height: 1.6em;
-
+  font-size: var(--size-body);
+  margin-left: var(--gap-thesis);
+  margin-right: var(--gap-thesis);
   .hypertext {
     position: absolute;
     height: auto;
@@ -217,7 +211,6 @@ h2 {
   margin: 110px;
 
   .knockoff {
-    display: block;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -236,7 +229,6 @@ h2 {
     text-align: right;
     color: grey;
     font-size: 0.5em;
-
     width: 80vw;
     position: relative;
   }

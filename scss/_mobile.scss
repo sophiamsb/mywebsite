@@ -1,13 +1,77 @@
-@media (max-width: 700px) {
-  html {
-    font-size: 3.5vw !important;
+@media screen and (max-width: 1024px) and (min-width: 350px) {
+  /*_____ HOMEPAGE____*/
+  header {
+    flex-direction: column;
   }
-  .projects {
-    display: block !important;
 
-    a {
-      width: 100% !important;
-      margin-bottom: 10px !important;
+  .box {
+    width: 100vw !important;
+  }
+  .about {
+    width: 100vw !important;
+    height: calc(var(--row-height) * 1.75) !important;
+  }
+  .box2 {
+    width: 100vw !important;
+  }
+
+  #list {
+    height: calc(var(--row-height) * 1.75) !important;
+  }
+
+  #lightbox.active {
+    img {
+      width: 90% !important;
     }
+  }
+  /*_____ PROJECTS_____*/
+
+  .project-grid {
+    display: grid;
+  }
+  section {
+    width: 100vw !important;
+    height: 100vw !important;
+  }
+
+  .project-header {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, calc(var(--item-width) / 3));
+    grid-gap: var(--gap);
+    justify-content: center;
+    margin-top: var(--gap);
+  }
+
+  .small-box {
+    margin: 0px !important;
+  }
+  /*_____ THESIS_____*/
+  .title {
+    height: 200px;
+  }
+
+  .textblock {
+    margin-left: calc(var(--gap) * 1.2) !important;
+    margin-right: calc(var(--gap) * 1.2) !important;
+  }
+
+  .menu {
+    display: none;
+  }
+  .headline {
+    margin-right: calc(var(--gap) * 1.2) !important;
+    margin-left: calc(var(--gap) * 1.2) !important;
+    height: 90px;
+    line-height: 2em;
+  }
+
+  .citation {
+    margin: calc(var(--gap) * 1.2) !important;
+  }
+  .picture {
+    margin: calc(var(--gap) * 1.2) !important;
+  }
+  .picture2 {
+    margin: calc(var(--gap) * 1.2) !important;
   }
 }

@@ -1,0 +1,97 @@
+.project-layout {
+  min-height: 100%;
+  overflow-x: hidden;
+  position: relative;
+  overflow-y: hidden;
+}
+
+.project-grid {
+  display: flex;
+  height: 100vh;
+}
+section {
+  overflow: auto;
+  width: 50vw;
+  height: fit-content;
+}
+
+.grid-project-item {
+  display: grid;
+  justify-content: center;
+  margin-top: var(--gap);
+  margin-bottom: var(--gap);
+  grid-gap: var(--gap);
+}
+
+.project-header {
+  display: flex;
+  margin: var(--gap);
+  height: var(--item-height);
+}
+
+.small-box {
+  background: white;
+  height: calc(var(--item-height) / 3);
+  width: calc(var(--item-width) / 3);
+  position: relative;
+  text-align: left;
+  margin: var(--gap);
+
+  p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+  }
+  .intro {
+    outline: 1px black solid;
+    height: calc(var(--item-height) / 3);
+    width: calc(var(--item-width) / 3);
+    font-size: var(--size-caption);
+  }
+  .nav {
+    outline: 1px var(--red) solid;
+    height: calc(var(--item-height) / 3);
+    width: calc(var(--item-width) / 3);
+    color: var(--red);
+  }
+  .home {
+    background-image: url(../img/brick-sample.jpg), url(../img/brick-sample.jpg);
+    background-blend-mode: difference;
+    background-position: calc(50% - 1px) calc(50% - 1px),
+      calc(50% + 1px) calc(50% + 1px);
+    filter: brightness(2) invert(1) grayscale(1);
+    border: 1px var(--red) solid;
+    height: calc(var(--item-height) / 3);
+    width: calc(var(--item-width) / 3);
+    color: grey;
+  }
+}
+
+.project-info {
+  p {
+    padding: var(--gap);
+  }
+}
+
+.project-img {
+  padding: var(--gap);
+
+  img {
+    width: 100%;
+    margin-bottom: var(--gap);
+  }
+  p {
+    color: red;
+    font-size: var(--size-caption);
+    float: right;
+    margin-top: -2em;
+  }
+}
+
+iframe {
+  width: 100%;
+  min-height: 100vh;
+  bottom: 0;
+}
