@@ -110,18 +110,21 @@ marquee {
 
 #list {
   height: var(--row-height);
-  width: 100vw;
   display: flex;
+  justify-content: flex-start;
   align-items: center;
-  justify-content: center;
+  width: 100vw;
+  div {
+    height: 35px;
+  }
 }
 
 button {
   width: 100px;
   font-size: var(--size-body);
+  padding: calc((var(--gap)) / 5);
   margin-left: var(--gap);
   margin-top: var(--gap);
-  padding: calc((var(--gap)) / 5);
   background: white;
   outline: 1px black solid;
   border: none;

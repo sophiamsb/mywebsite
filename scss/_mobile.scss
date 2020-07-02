@@ -1,4 +1,4 @@
-@media screen and (max-width: 1024px) and (min-width: 350px) {
+@media screen and (max-width: 1300px) {
   /*_____ HOMEPAGE____*/
   header {
     flex-direction: column;
@@ -6,17 +6,31 @@
 
   .box {
     width: 100vw !important;
+    height: calc(var(--row-height) / 2) !important;
   }
   .about {
     width: 100vw !important;
-    height: calc(var(--row-height) * 1.75) !important;
+    height: calc(var(--row-height) * 0.8) !important;
   }
   .box2 {
     width: 100vw !important;
+    height: calc(var(--row-height) / 2) !important;
   }
 
   #list {
-    height: calc(var(--row-height) * 1.75) !important;
+    height: calc(var(--row-height) * 0.8) !important;
+    display: grid !important;
+    grid-template-columns: repeat(6, 100px) !important;
+    grid-auto-rows: var(--gap) !important;
+    grid-gap: var(--gap);
+    margin-top: var(--gap);
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+
+    div {
+      height: 35px;
+    }
   }
 
   #lightbox.active {
@@ -31,20 +45,13 @@
   }
   section {
     width: 100vw !important;
-    height: 100vw !important;
+    height: fit-content;
   }
 
-  .project-header {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, calc(var(--item-width) / 3));
-    grid-gap: var(--gap);
-    justify-content: center;
-    margin-top: var(--gap);
+  .project-info {
+    width: calc(100%- var(--gap) * 2);
   }
 
-  .small-box {
-    margin: 0px !important;
-  }
   /*_____ THESIS_____*/
   .title {
     height: 200px;
@@ -73,5 +80,72 @@
   }
   .picture2 {
     margin: calc(var(--gap) * 1.2) !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  /*--Home--*/
+  .about {
+    width: 100vw !important;
+    height: calc(var(--row-height) * 1.7) !important;
+  }
+  #list {
+    height: calc(var(--row-height) * 1.5) !important;
+    display: grid !important;
+    grid-template-columns: repeat(3, 100px) !important;
+    grid-auto-rows: calc(var(--gap) * 1.5) !important;
+    grid-gap: var(--gap);
+    margin-top: var(--gap);
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+
+    div {
+      height: 35px;
+    }
+  }
+  button {
+    width: 70px !important;
+  }
+
+  /*--Project--*/
+  .small-box {
+    background: white;
+    height: calc(var(--item-height) / 4);
+    width: calc(var(--item-width) / 4);
+    position: relative;
+    text-align: left;
+
+    p {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      text-align: center;
+    }
+    .intro {
+      outline: 1px black solid;
+      height: calc(var(--item-height) / 4);
+      width: calc(var(--item-width) / 4);
+      font-size: var(--size-caption);
+    }
+    .nav {
+      outline: 1px var(--red) solid;
+      height: calc(var(--item-height) / 4);
+      width: calc(var(--item-width) / 4);
+      color: var(--red);
+    }
+    .home {
+      background-image: url(../img/brick-sample.jpg),
+        url(../img/brick-sample.jpg);
+      background-blend-mode: difference;
+      background-position: calc(50% - 1px) calc(50% - 1px),
+        calc(50% + 1px) calc(50% + 1px);
+      filter: brightness(2) invert(1) grayscale(1);
+      border: 1px var(--red) solid;
+      height: calc(var(--item-height) / 4);
+      width: calc(var(--item-width) / 4);
+      color: grey;
+    }
   }
 }

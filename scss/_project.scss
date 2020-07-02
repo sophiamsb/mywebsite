@@ -2,7 +2,6 @@
   min-height: 100%;
   overflow-x: hidden;
   position: relative;
-  overflow-y: hidden;
 }
 
 .project-grid {
@@ -24,7 +23,9 @@ section {
 
 .project-header {
   display: flex;
-  margin: var(--gap);
+  margin-top: var(--gap);
+  margin-bottom: var(--gap);
+  justify-content: space-around;
 }
 
 .small-box {
@@ -33,7 +34,6 @@ section {
   width: calc(var(--item-width) / 3);
   position: relative;
   text-align: left;
-  margin: var(--gap);
 
   p {
     position: absolute;
@@ -52,8 +52,9 @@ section {
     outline: 1px var(--red) solid;
     height: calc(var(--item-height) / 3);
     width: calc(var(--item-width) / 3);
-    color: var(--red);
+    color: red;
   }
+
   .home {
     background-image: url(../img/brick-sample.jpg), url(../img/brick-sample.jpg);
     background-blend-mode: difference;
@@ -70,11 +71,11 @@ section {
 .project-info {
   display: inline-block;
   border-radius: 30px;
+  width: 650px;
   background-color: rgba(0, 0, 0, 0.1);
   padding: 25px 30px 30px 30px;
   width: calc(100% - 80px);
   margin: var(--gap);
-  max-width: 650px;
   text-align: left;
   line-height: 1.2;
   letter-spacing: 0.2px;
