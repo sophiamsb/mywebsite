@@ -148,4 +148,13 @@
       color: grey;
     }
   }
+
+  /*_____ NEWALIX_____*/
+  iframe {
+    display: none;
+  }
+  .link {
+    display: block;
+    margin: var(--gap);
+  }
 }

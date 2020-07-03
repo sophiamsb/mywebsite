@@ -159,7 +159,7 @@ button.is-checked {
   display: none;
 }
 
-.project {
+.project-box {
   outline: 1px black solid;
   background: white;
   height: var(--item-height);
@@ -177,26 +177,6 @@ button.is-checked {
   &:hover {
     color: red;
     outline: 1px red solid;
-  }
-}
-.project1 {
-  height: var(--item-height);
-  width: var(--item-width);
-  &:hover {
-    background-image: url("../img/target/target-cover.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-}
-.project2 {
-  height: var(--item-height);
-  width: var(--item-width);
-  &:hover {
-    background-image: url("../img/sandt/cup3.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
   }
 }
 
