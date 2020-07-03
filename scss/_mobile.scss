@@ -154,7 +154,8 @@
     display: none;
   }
   .link {
-    display: block;
+    display: block !important;
+    visibility: visible;
     margin: var(--gap);
   }
 }
