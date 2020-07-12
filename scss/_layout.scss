@@ -35,7 +35,7 @@
 
 @keyframes roll {
   from {
-    background-positiogin: 0% 0%;
+    background-position: 0% 0%;
   }
 
   to {
@@ -220,7 +220,8 @@ footer {
   flex-direction: column;
 
   img {
-    width: 35%;
+    height: 90%;
+    width: auto;
   }
 }
 
