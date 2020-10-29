@@ -11,11 +11,13 @@
       crossorigin="anonymous"
     />
     <link rel="icon" type="image/png" href="img/sparkle.ico" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <title>Home –– Sophia Msaoubi</title>
   </head>
   <body>
     <div class="layout">
+      <div class="cursor"></div>
       <!--HEADER-->
       <header>
         <div class="box"></div>
@@ -39,9 +41,7 @@
           </p>
         </div>
         <div class="box2"></div>
-        <marquee behavior="scroll" direction="right">
-          Sophia Msaoubi
-        </marquee>
+        <marquee behavior="scroll" direction="right"> Sophia Msaoubi </marquee>
       </header>
       <!--LIST-->
       <div id="list">
@@ -180,6 +180,13 @@
             <img src="./img/archive/collage/collage9.jpg" />
           </div>
         </div>
+
+        <div class="item collage">
+          <div class="archive">
+            <img src="./img/archive/collage/collage10.jpg" />
+          </div>
+        </div>
+
         <!--
         Drawing
       -->
@@ -232,6 +239,11 @@
         <div class="item drawing">
           <div class="archive">
             <img src="./img/archive/drawing/drawing10.jpg" />
+          </div>
+        </div>
+        <div class="item drawing">
+          <div class="archive">
+            <img src="./img/archive/drawing/research-illy.jpg" />
           </div>
         </div>
 
@@ -514,6 +526,37 @@
         if (e.target !== e.currentTarget) return;
         lightbox.classList.remove("active");
       });
+
+      const cursor = document.querySelector('.cursor');
+
+let mouseX = 0;
+let mouseY = 0;
+
+let cursorX = 0;
+let cursorY = 0;
+
+let speed = 0.5; // change to increase the ease.
+
+function animate() {
+    let distX = mouseX - cursorX;
+    let distY = mouseY - cursorY;
+
+    cursorX = cursorX + (distX * speed);
+    cursorY = cursorY + (distY * speed);
+
+    cursor.style.left = cursorX + 'px';
+    cursor.style.top = cursorY + 'px';
+
+    requestAnimationFrame(animate);
+}
+
+
+animate();
+
+document.addEventListener('mousemove', (event) => {
+    mouseX = event.pageX;
+    mouseY = event.pageY;
+})
     </script>
   </body>
 </html>

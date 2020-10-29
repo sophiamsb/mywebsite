@@ -16,7 +16,7 @@
 
   p {
     font-size: var(--size-h1);
-    backdrop-filter: invert(0.7);
+    background-clip: invert(0.7);
     text-align: center;
     text-transform: uppercase;
     width: fit-content;
