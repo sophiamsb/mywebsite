@@ -17,7 +17,7 @@
   </head>
   <body>
     <div class="layout">
-      <div class="cursor"></div>
+   
       <!--HEADER-->
       <header>
         <div class="box"></div>
@@ -71,6 +71,9 @@
         </div>
         <div>
           <button class="button" data-filter="gif">Gif</button>
+        </div>
+        <div>
+          <button class="button" data-filter="web">Website</button>
         </div>
       </div>
       <!--GRID-->
@@ -413,6 +416,39 @@
           </div>
         </div>
         <!--
+        website
+      -->
+      <div class="item web">
+        <div class="archive">
+          <img src="./img/archive/website/alixpress.png" />
+          <div class="caption">
+            <p>
+              <a href="https://sophiamsb.github.io/newalixpress/page.html" target="_blank"> <i class="fas fa-link"></i> </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="item web">
+        <div class="archive">
+          <img src="./img/archive/website/erewhon.png" />
+          <div class="caption">
+            <p>
+              <a href="https://sophiamsb.github.io/erehwon/" target="_blank"> <i class="fas fa-link"></i> </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="item web">
+        <div class="archive">
+          <img src="./img/archive/website/hesign.png" />
+          <div class="caption">
+            <p>
+              <a href="http://hesign.com/" target="_blank"> <i class="fas fa-link"></i> </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--
         project-img
       -->
         <div class="item bw">
@@ -504,6 +540,14 @@
         });
       });
 
+      var items = $(".item");
+for(var i = 0; i < items.length; i++){
+    var target = Math.floor(Math.random() * items.length -1) + 1;
+    var target2 = Math.floor(Math.random() * items.length -1) +1;
+    items.eq(target).before(items.eq(target2));
+}
+
+
       const lightbox = document.createElement("div");
       lightbox.id = "lightbox";
       document.body.appendChild(lightbox);
@@ -527,36 +571,6 @@
         lightbox.classList.remove("active");
       });
 
-      const cursor = document.querySelector('.cursor');
-
-let mouseX = 0;
-let mouseY = 0;
-
-let cursorX = 0;
-let cursorY = 0;
-
-let speed = 0.5; // change to increase the ease.
-
-function animate() {
-    let distX = mouseX - cursorX;
-    let distY = mouseY - cursorY;
-
-    cursorX = cursorX + (distX * speed);
-    cursorY = cursorY + (distY * speed);
-
-    cursor.style.left = cursorX + 'px';
-    cursor.style.top = cursorY + 'px';
-
-    requestAnimationFrame(animate);
-}
-
-
-animate();
-
-document.addEventListener('mousemove', (event) => {
-    mouseX = event.pageX;
-    mouseY = event.pageY;
-})
     </script>
   </body>
 </html>
