@@ -51,7 +51,7 @@ body {
   line-height: var(--line-height-body);
   width: 100%;
   scroll-behavior: smooth;
-  cursor: none;
+
   ::-webkit-scrollbar {
     display: none;
   }
@@ -59,27 +59,4 @@ body {
 
 .link {
   display: none;
-}
-
-.cursor {
-  clip-path: polygon(
-    50% 0%,
-    61% 35%,
-    98% 35%,
-    68% 57%,
-    79% 91%,
-    50% 70%,
-    21% 91%,
-    32% 57%,
-    2% 35%,
-    39% 35%
-  );
-  width: 30px;
-  height: 30px;
-  background: blue;
-  border-radius: 50%;
-  position: absolute;
-  mix-blend-mode: difference;
-  z-index: 1000;
-  transform: translateX(-150%) translateY(-150%);
 }
