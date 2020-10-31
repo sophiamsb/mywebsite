@@ -1,37 +1,5 @@
 @media screen and (max-width: 1300px) {
   /*_____ HOMEPAGE____*/
-  header {
-    flex-direction: column;
-  }
-
-  .box {
-    width: 100vw !important;
-    height: calc(var(--row-height) / 2) !important;
-  }
-  .about {
-    width: 100vw !important;
-    height: calc(var(--row-height) * 0.8) !important;
-  }
-  .box2 {
-    width: 100vw !important;
-    height: calc(var(--row-height) / 2) !important;
-  }
-
-  #list {
-    height: calc(var(--row-height) * 0.8) !important;
-    display: grid !important;
-    grid-template-columns: repeat(6, 100px) !important;
-    grid-auto-rows: var(--gap) !important;
-    grid-gap: var(--gap);
-    margin-top: var(--gap);
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-
-    div {
-      height: 35px;
-    }
-  }
 
   #lightbox.active {
     img {
@@ -48,8 +16,8 @@
     height: fit-content;
   }
 
-  .project-info {
-    width: calc(100%- var(--gap) * 2);
+  .project-box {
+    width: calc(100%- var(--gap) * 2) !important;
   }
 
   /*_____ THESIS_____*/
@@ -85,27 +53,32 @@
 
 @media screen and (max-width: 500px) {
   /*--Home--*/
+  header {
+    flex-direction: column;
+  }
+
+  .box {
+    width: 100vw !important;
+    height: calc(var(--row-height) / 5) !important;
+  }
+  .about {
+    max-height: 250px !important;
+  }
+  .box2 {
+    width: 100vw !important;
+    height: calc(var(--row-height) / 2) !important;
+  }
   .about {
     width: 100vw !important;
     height: calc(var(--row-height) * 1.7) !important;
   }
-  #list {
-    height: calc(var(--row-height) * 1.5) !important;
-    display: grid !important;
-    grid-template-columns: repeat(3, 100px) !important;
-    grid-auto-rows: calc(var(--gap) * 1.5) !important;
-    grid-gap: var(--gap);
-    margin-top: var(--gap);
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
 
-    div {
-      height: 35px;
-    }
+  #list {
+    width: calc(100%- var(--gap) * 4) !important;
   }
   button {
-    width: 70px !important;
+    margin-left: 10px !important;
+    margin-top: var(--gap);
   }
 
   /*--Project--*/
@@ -123,18 +96,7 @@
       transform: translateX(-50%) translateY(-50%);
       text-align: center;
     }
-    .intro {
-      outline: 1px black solid;
-      height: calc(var(--item-height) / 4);
-      width: calc(var(--item-width) / 4);
-      font-size: var(--size-caption);
-    }
-    .nav {
-      outline: 1px var(--red) solid;
-      height: calc(var(--item-height) / 4);
-      width: calc(var(--item-width) / 4);
-      color: var(--red);
-    }
+
     .home {
       background-image: url(../img/brick-sample.jpg),
         url(../img/brick-sample.jpg);

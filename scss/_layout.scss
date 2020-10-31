@@ -76,7 +76,7 @@ marquee {
 }
 
 .about {
-  height: var(--row-height);
+  height: fit-content;
   width: calc(var(--column-width) * 2);
   z-index: 1;
 
@@ -109,14 +109,11 @@ marquee {
 }
 
 #list {
-  height: var(--row-height);
   display: flex;
+  flex-flow: wrap;
   justify-content: flex-start;
   align-items: center;
   width: 100vw;
-  div {
-    height: 35px;
-  }
 }
 
 button {
@@ -158,28 +155,6 @@ button.is-checked {
 .item.none {
   display: none;
 }
-
-.project-box {
-  outline: 1px black solid;
-  background: white;
-  height: var(--item-height);
-  width: var(--item-width);
-  position: relative;
-  text-align: left;
-
-  p {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    text-align: center;
-  }
-  &:hover {
-    color: red;
-    outline: 1px red solid;
-  }
-}
-
 .archive {
   width: var(--item-width);
   height: auto;
@@ -199,12 +174,6 @@ footer {
   top: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(255, 255, 255, 0) 62%,
-    rgba(241, 194, 194, 0.8127626050420168) 100%
-  );
   display: none;
   p {
     background-color: white;
@@ -218,7 +187,6 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
   img {
     height: 90%;
     width: auto;

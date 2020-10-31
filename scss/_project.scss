@@ -11,30 +11,18 @@
 section {
   overflow: auto;
   width: 50vw;
-}
-
-.grid-project-item {
-  display: grid;
-  justify-content: center;
-  margin-top: var(--gap);
-  margin-bottom: var(--gap);
-  grid-gap: var(--gap);
+  display: flex;
+  flex-direction: column;
 }
 
 .project-header {
   display: flex;
+  margin-left: var(--gap);
   margin-top: var(--gap);
   margin-bottom: var(--gap);
-  justify-content: space-around;
+  justify-content: flex-start;
 }
-
 .small-box {
-  background: white;
-  height: calc(var(--item-height) / 3);
-  width: calc(var(--item-width) / 3);
-  position: relative;
-  text-align: left;
-
   p {
     position: absolute;
     top: 50%;
@@ -42,19 +30,6 @@ section {
     transform: translateX(-50%) translateY(-50%);
     text-align: center;
   }
-  .intro {
-    outline: 1px black solid;
-    height: calc(var(--item-height) / 3);
-    width: calc(var(--item-width) / 3);
-    font-size: var(--size-caption);
-  }
-  .nav {
-    outline: 1px var(--red) solid;
-    height: calc(var(--item-height) / 3);
-    width: calc(var(--item-width) / 3);
-    color: red;
-  }
-
   .home {
     background-image: url(../img/brick-sample.jpg), url(../img/brick-sample.jpg);
     background-blend-mode: difference;
@@ -68,23 +43,26 @@ section {
   }
 }
 
-.project-info {
-  display: inline-block;
-  border-radius: 30px;
-  width: 650px;
-  background-color: rgba(0, 0, 0, 0.1);
-  padding: 25px 30px 30px 30px;
-  width: calc(100% - 80px);
-  margin: var(--gap);
+.project-box {
+  outline: 1px black solid;
+  background: white;
+  width: 600px;
+  height: fit-content;
+  position: relative;
   text-align: left;
-  line-height: 1.2;
-  letter-spacing: 0.2px;
+  margin: var(--gap);
 
   p {
     padding: var(--gap);
   }
+  span {
+    padding-left: var(--gap);
+  }
+  .info {
+    padding-top: var(--gap);
+    padding-bottom: var(--gap);
+  }
 }
-
 .project-img {
   padding: var(--gap);
 
