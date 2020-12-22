@@ -1,5 +1,5 @@
 .portfolio {
-  width: calc(100vw-var(--gap));
+  width: calc(100vw - var(--gap));
   position: absolute;
   top: 383px;
   display: flex;
@@ -35,7 +35,7 @@
 
 @media only screen and (max-width: 960px) {
   .portfolio {
-    width: calc(100vw-var(--gap-mobile)) !important;
+    width: calc(100vw - var(--gap-mobile)) !important;
     top: 503px;
     gap: 21.5% !important;
     margin-left: 9%;
