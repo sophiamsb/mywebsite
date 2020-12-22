@@ -6,7 +6,7 @@
 .grid2 {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  // grid-gap: 1px;
+  //grid-gap: 1px;
 }
 .item2 {
   padding: 2px;
@@ -14,7 +14,7 @@
   height: 19px;
 }
 .a1 {
-  background-image: url("/assets/img/wall/pattern03.jpg");
+  background-image: url("./wall/pattern03.jpg");
   background-size: 100%;
 }
 .a6 {
@@ -48,7 +48,7 @@
   background: var(--pink);
 }
 .a18 {
-  background-image: url("/assets/img/wall/arab.jpg");
+  background-image: url("./wall/arab.jpg");
   background-size: 100% 100%;
 }
 .a23 {
@@ -128,7 +128,7 @@
 }
 
 .a30 {
-  background-image: url("/assets/img/wall/pattern01.jpg");
+  background-image: url("./wall/pattern01.jpg");
   background-size: 100% 100%;
 }
 .a35 {
@@ -141,11 +141,11 @@
   background: var(--neon-green);
 }
 .a49 {
-  background-image: url("/assets/img/wall/textile01.jpg");
+  background-image: url("./wall/textile01.jpg");
   background-size: 100% 100%;
 }
 .a60 {
-  background-image: url("/assets/img/wall/pattern02.jpg");
+  background-image: url("./wall/pattern02.jpg");
   background-size: 100%;
 }
 

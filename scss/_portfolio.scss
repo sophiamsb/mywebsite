@@ -37,8 +37,9 @@
   .portfolio {
     width: calc(100vw - var(--gap-mobile)) !important;
     top: 503px;
-    gap: 21.5% !important;
-    margin-left: 9%;
+    // gap: 21.5% !important;
+    justify-content: space-evenly;
+    margin-left: 4.4%;
   }
   .archive {
     width: 35% !important;
