@@ -1,0 +1,59 @@
+.portfolio {
+  width: calc(100vw-var(--gap));
+  position: absolute;
+  top: 383px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+  margin-left: 7.1%;
+}
+
+.archive {
+  opacity: 1;
+  transition: 0.3s;
+  width: 23.1%;
+  height: auto;
+  margin-bottom: 1.5%;
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .link {
+    color: blue;
+    text-decoration: underline;
+    padding: 2px;
+    cursor: pointer;
+  }
+}
+
+.archive.fade {
+  opacity: 0;
+}
+.archive.none {
+  display: none;
+}
+
+@media only screen and (max-width: 960px) {
+  .portfolio {
+    width: calc(100vw-var(--gap-mobile)) !important;
+    top: 503px;
+    gap: 21.5% !important;
+    margin-left: 9%;
+  }
+  .archive {
+    width: 35% !important;
+    height: auto;
+    margin-bottom: 5%;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    .link {
+      color: blue;
+      text-decoration: underline;
+      padding: 2px;
+      cursor: pointer;
+    }
+  }
+}

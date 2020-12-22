@@ -4,501 +4,297 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
-      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
-      crossorigin="anonymous"
-    />
     <link rel="icon" type="image/png" href="img/sparkle.ico" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <title> Sophia Msaoubi</title>
+    <script src=  https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js></script>
+    <title>Sophia Msaoubi</title>
   </head>
   <body>
-    <div class="layout">
-      <!--HEADER-->
-      <header>
-        <div class="box"></div>
-        <div class="about">
-          <p>
-            <span>
-              Below is an insight into some work I’ve done so far. I work across
-              graphic design, web development and visual arts. I'm looking for
-              new projects and freelance work in design/art. If you are
-              interested in my work, feel free to
-              <a href="mailto:sophia.msaoubi@gmail.com"> ✉️ contact me</a>
-              <br />
-              <mark>Paris</mark>
-              <br />
-              <mark>Brussels Gent</mark> (recently graduated from Kaask School
-              of Art, Gent)
-              <br />
-              I'm currently living in <span style="color:red;">Berlin</span> and working at <a href="http://hesign.com/"> Hesign Studio</a>.
-            </span>
-          </p>
-        </div>
-        <div class="box2"></div>
-        <marquee behavior="scroll" direction="right"> Sophia Msaoubi </marquee>
-      </header>
-      <!--LIST-->
-      <div id="list">
-        <div>
-          <button class="button is-checked" data-filter="*">All</button>
-        </div>
-        <div>
-          <button class="button" data-filter="project">Project</button>
-        </div>
-        <div>
-          <button class="button" data-filter="collage">Collage</button>
-        </div>
-        <div>
-          <button class="button" data-filter="drawing">Drawing</button>
-        </div>
-        <div>
-          <button class="button" data-filter="sport">Sport</button>
-        </div>
-        <div>
-          <button class="button" data-filter="phoneme">Phone me</button>
-        </div>
-        <div>
-          <button class="button" data-filter="beautyshop">Beauty Shop</button>
-        </div>
-        <div>
-          <button class="button" data-filter="bw">Black and white</button>
-        </div>
-        <div>
-          <button class="button" data-filter="animation">Animation</button>
-        </div>
-        <div>
-          <button class="button" data-filter="web">Website</button>
+  <div id="layout" class="grid"></div>
+  <div class="portfolio">
+  
+     <div class="archive">
+        <img src="./img/archive/I dont't know/zebre.jpg" />
+      </div>
+      <div class="archive bw">
+        <img src="./img/archive/I dont't know/fly.jpg" />
+      </div>
+      <div class="archive collage">
+        <img src="./img/archive/collage/collage0.jpg" />
+      </div>
+      <div class="archive collage">
+        <img src="./img/archive/collage/collage1.jpg" />
+      </div>
+      <div class="archive collage bw">
+        <img src="./img/archive/collage/collage2.jpg" />
+      </div>
+      <div class="archive collage">
+        <img src="./img/archive/collage/collage3.jpg" />
+      </div>
+      <div class="archive collage bw">
+        <img src="./img/archive/collage/collage4.jpg" />
+      </div>
+      <div class="archive collage">
+        <img src="./img/archive/collage/collage5.jpg" />
+      </div>
+      <div class="archive collage">
+        <img src="./img/archive/collage/collage6.jpg" />
+      </div>
+      <div class="archive collage bw">
+        <img src="./img/archive/collage/collage7.jpg" />
+      </div>
+      <div class="archive collage bw">
+        <img src="./img/archive/collage/collage8.jpg" />
+      </div>
+      <div class="archive collage bw">
+        <img src="./img/archive/collage/collage9.jpg" />
+      </div>
+      <div class="archive collage">
+        <img src="./img/archive/collage/collage10.jpg" />
+      </div>
+      <div class="archive drawing sport">
+        <img src="./img/archive/drawing/drawing1.jpg" />
+      </div>
+      <div class="archive drawing">
+        <img src="./img/archive/drawing/drawing2.jpg" />
+      </div>
+      <div class="archive drawing">
+        <img src="./img/archive/drawing/drawing3.jpg" />
+      </div>
+      <div class="archive drawing bw">
+        <img src="./img/archive/drawing/drawing4.png" />
+      </div>
+      <div class="archive drawing">
+        <img src="./img/archive/drawing/drawing5.jpg" />
+      </div>
+      <div class="archive drawing">
+        <img src="./img/archive/drawing/drawing6.jpg" />
+      </div>
+      <div class="archive drawing">
+        <img src="./img/archive/drawing/drawing7.jpg" />
+      </div>
+      <div class="archive drawing">
+        <img src="./img/archive/drawing/drawing8.jpg" />
+      </div>
+      <div class="archive drawing">
+        <img src="./img/archive/drawing/drawing9.jpg" />
+      </div>
+      <div class="archive drawing">
+        <img src="./img/archive/drawing/drawing10.jpg" />
+      </div>
+      <div class="archive drawing">
+        <img src="./img/archive/drawing/research-illy.jpg" />
+      </div>
+      <div class="archive sport">
+        <img src="./img/archive/sport/sport1.jpg" />
+      </div>
+      <div class="archive sport">
+        <img src="./img/archive/sport/sport2.jpg" />
+      </div>
+      <div class="archive sport collage">
+        <img src="./img/archive/sport/sport3.jpg" />
+      </div>
+      <div class="archive sport">
+        <img src="./img/archive/sport/sport4.jpg" />
+      </div>
+      <div class="archive sport">
+        <img src="./img/archive/sport/sport5.jpg" />
+      </div>
+      <div class="archive sport">
+        <img src="./img/archive/sport/sport6.jpg" />
+      </div>
+      <div class="archive sport">
+        <img src="./img/archive/sport/sport7.jpg" />
+      </div>
+      <div class="archive sport">
+        <img src="./img/archive/sport/sport8.jpg" />
+      </div>
+      <div class="archive sport">
+        <img src="./img/archive/sport/sport9.jpg" />
+      </div>
+      <div class="archive tech">
+        <img src="./img/archive/Phone me/Iphone0.jpg" />
+      </div>
+      <div class="archive tech">
+        <img src="./img/archive/Phone me/iphone1.jpg" />
+      </div>
+      <div class="archive tech">
+        <img src="./img/archive/Phone me/Iphone2.jpg" />
+      </div>
+      <div class="archive beautyshop">
+        <img src="./img/archive/beauty shop/beauty1.jpg" />
+      </div>
+      <div class="archive beautyshop">
+        <img src="./img/archive/beauty shop/beauty2.jpg" />
+      </div>
+      <div class="archive beautyshop">
+        <img src="./img/archive/beauty shop/beauty3.jpg" />
+      </div>
+      <div class="archive beautyshop">
+        <img src="./img/archive/beauty shop/beauty4.jpg" />
+      </div>
+      <div class="archive beautyshop">
+        <img src="./img/archive/beauty shop/beauty5.jpg" />
+      </div>
+      <div class="archive beautyshop">
+        <img src="./img/archive/beauty shop/beauty6.jpg" />
+      </div>
+      <div class="archive beautyshop animation">
+        <img src="./img/archive/beauty shop/bijoux1.gif" />
+      </div>
+      <div class="archive beautyshop animation">
+        <img src="./img/archive/beauty shop/bijoux2.gif" />
+      </div>
+      <div class="archive beautyshop animation">
+        <img src="./img/archive/beauty shop/bijoux3.gif" />
+      </div>
+      <div class="archive beautyshop animation">
+        <img src="./img/archive/beauty shop/bijoux4.gif" />
+      </div>
+      <div class="archive beautyshop">
+        <img src="./img/archive/beauty shop/celebration1.jpg" />
+      </div>
+      <div class="archive beautyshop">
+        <img src="./img/archive/beauty shop/celebration2.jpg" />
+      </div>
+      <div class="archive beautyshop">
+        <img src="./img/archive/beauty shop/shop1.png" />
+      </div>
+      <div class="archive beautyshop">
+        <img src="./img/archive/beauty shop/shop2.png" />
+      </div>
+      <div class="archive beautyshop bw">
+        <img src="./img/archive/beauty shop/shop3.jpg" />
+      </div>
+      <div class="archive beautyshop bw">
+        <img src="./img/archive/beauty shop/shop4.jpg" />
+      </div>
+      <div class="archive animation bw">
+        <img src="./img/archive/gif/coeurnoir.gif" />
+      </div>
+      <div class="archive animation">
+        <img src="./img/archive/gif/palmier.gif" />
+      </div>
+      <div class="archive animation beautyshop">
+        <video width="100%" playsinline autoplay loop>
+          <source src="./img/archive/gif/float_animation.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="archive web beautyshop">
+        <img src="./img/archive/website/alixpress.png" />
+        <div class="link">
+            <a href="https://sophiamsb.github.io/newalixpress/page.html" target="_blank">NEW ALI EXPRESS </a>
         </div>
       </div>
-      <!--GRID-->
-      <div class="grid">
-     <!--
-     I don't know
-     -->
-        <div class="item">
-          <div class="archive">
-            <img src="./img/archive/I dont't know/zebre.jpg" />
-          </div>
+      <div class="archive tech project web">
+        <img src="./img/archive/website/erewhon.png" />
+        <div class="link">
+            <a href="https://sophiamsb.github.io/erehwon/" target="_blank">EREWHON</a>
         </div>
-        <div class="item bw">
-          <div class="archive">
-            <img src="./img/archive/I dont't know/fly.jpg" />
-          </div>
+      </div>
+      <div class="archive web">
+        <img src="./img/archive/website/hesign.png" />
+        <div class="link">
+            <a href="http://hesign.com/" target="_blank">hesign.com</a>
         </div>
-        <!--
-        Collage
-      -->
-        <div class="item collage">
-          <div class="archive">
-            <img src="./img/archive/collage/collage0.jpg" />
-          </div>
+      </div>
+      <div class="archive web">
+        <img src="./img/archive/website/f6living.png" />
+        <div class="link">
+            <a href="http://f6-living.com/" target="_blank">f6-living.com </a>
         </div>
-        <div class="item collage">
-          <div class="archive">
-            <img src="./img/archive/collage/collage1.jpg" />
-          </div>
-        </div>
-        <div class="item collage bw">
-          <div class="archive">
-            <img src="./img/archive/collage/collage2.jpg" />
-          </div>
-        </div>
-        <div class="item collage">
-          <div class="archive">
-            <img src="./img/archive/collage/collage3.jpg" />
-          </div>
-        </div>
-        <div class="item collage bw">
-          <div class="archive">
-            <img src="./img/archive/collage/collage4.jpg" />
-          </div>
-        </div>
-        <div class="item collage colors">
-          <div class="archive">
-            <img src="./img/archive/collage/collage5.jpg" />
-          </div>
-        </div>
-        <div class="item collage">
-          <div class="archive">
-            <img src="./img/archive/collage/collage6.jpg" />
-          </div>
-        </div>
-        <div class="item collage bw">
-          <div class="archive">
-            <img src="./img/archive/collage/collage7.jpg" />
-          </div>
-        </div>
-        <div class="item collage bw">
-          <div class="archive">
-            <img src="./img/archive/collage/collage8.jpg" />
-          </div>
-        </div>
-        <div class="item collage bw">
-          <div class="archive">
-            <img src="./img/archive/collage/collage9.jpg" />
-          </div>
-        </div>
-        <div class="item collage">
-          <div class="archive">
-            <img src="./img/archive/collage/collage10.jpg" />
-          </div>
-        </div>
-        <!--
-        Drawing
-      -->
-        <div class="item drawing sport">
-          <div class="archive">
-            <img src="./img/archive/drawing/drawing1.jpg" />
-          </div>
-        </div>
-        <div class="item drawing">
-          <div class="archive">
-            <img src="./img/archive/drawing/drawing2.jpg" />
-          </div>
-        </div>
-        <div class="item drawing">
-          <div class="archive">
-            <img src="./img/archive/drawing/drawing3.jpg" />
-          </div>
-        </div>
-        <div class="item drawing bw">
-          <div class="archive">
-            <img src="./img/archive/drawing/drawing4.png" />
-          </div>
-        </div>
-        <div class="item drawing">
-          <div class="archive">
-            <img src="./img/archive/drawing/drawing5.jpg" />
-          </div>
-        </div>
-        <div class="item drawing">
-          <div class="archive">
-            <img src="./img/archive/drawing/drawing6.jpg" />
-          </div>
-        </div>
-        <div class="item drawing">
-          <div class="archive">
-            <img src="./img/archive/drawing/drawing7.jpg" />
-          </div>
-        </div>
-        <div class="item drawing">
-          <div class="archive">
-            <img src="./img/archive/drawing/drawing8.jpg" />
-          </div>
-        </div>
-        <div class="item drawing">
-          <div class="archive">
-            <img src="./img/archive/drawing/drawing9.jpg" />
-          </div>
-        </div>
-        <div class="item drawing">
-          <div class="archive">
-            <img src="./img/archive/drawing/drawing10.jpg" />
-          </div>
-        </div>
-        <div class="item drawing">
-          <div class="archive">
-            <img src="./img/archive/drawing/research-illy.jpg" />
-          </div>
-        </div>
-        <!--
-        Sport
-      -->
-        <div class="item sport">
-          <div class="archive">
-            <img src="./img/archive/sport/sport1.jpg" />
-          </div>
-        </div>
-        <div class="item sport">
-          <div class="archive">
-            <img src="./img/archive/sport/sport2.jpg" />
-          </div>
-        </div>
+      </div>
 
-        <div class="item sport collage">
-          <div class="archive">
-            <img src="./img/archive/sport/sport3.jpg" />
-          </div>
+      <div class="archive web">
+        <img src="./img/archive/website/cvab.png" />
+        <div class="link">
+            <a href="http://cva-berlin.com/" target="_blank">cva-berlin.com</a>
         </div>
+      </div>
 
-        <div class="item sport">
-          <div class="archive">
-            <img src="./img/archive/sport/sport4.jpg" />
-          </div>
-        </div>
+      <div class="archive project">
+        <img src="./img/archive/project/cup3.jpg" />
+      <div class="link">
+         <a href="projects/sandt/illycup.html"> THE DARK ONE - ILLYCUP</a>   
+      </div>
+     </div>
 
-        <div class="item sport">
-          <div class="archive">
-            <img src="./img/archive/sport/sport5.jpg" />
-          </div>
-        </div>
-        <div class="item sport">
-          <div class="archive">
-            <img src="./img/archive/sport/sport6.jpg" />
-          </div>
-        </div>
-        <div class="item sport">
-          <div class="archive">
-            <img src="./img/archive/sport/sport7.jpg" />
-          </div>
-        </div>
-        <div class="item sport">
-          <div class="archive">
-            <img src="./img/archive/sport/sport8.jpg" />
-          </div>
-        </div>
-        <div class="item sport">
-          <div class="archive">
-            <img src="./img/archive/sport/sport9.jpg" />
-          </div>
-        </div>
-        <!--
-        Phone me
-      -->
-        <div class="item phoneme">
-          <div class="archive">
-            <img src="./img/archive/Phone me/Iphone0.jpg" />
-          </div>
-        </div>
-        <div class="item phoneme">
-          <div class="archive">
-            <img src="./img/archive/Phone me/iphone1.jpg" />
-          </div>
-        </div>
-        <div class="item phoneme">
-          <div class="archive">
-            <img src="./img/archive/Phone me/Iphone2.jpg" />
-          </div>
-        </div>
-        <!--
-        Beauty Shop
-      -->
-        <div class="item beautyshop">
-          <div class="archive">
-            <img src="./img/archive/beauty shop/beauty1.jpg" />
-          </div>
-        </div>
-        <div class="item beautyshop">
-          <div class="archive">
-            <img src="./img/archive/beauty shop/beauty2.jpg" />
-          </div>
-        </div>
-        <div class="item beautyshop">
-          <div class="archive">
-            <img src="./img/archive/beauty shop/beauty3.jpg" />
-          </div>
-        </div>
-        <div class="item beautyshop">
-          <div class="archive">
-            <img src="./img/archive/beauty shop/beauty4.jpg" />
-          </div>
-        </div>
-        <div class="item beautyshop">
-          <div class="archive">
-            <img src="./img/archive/beauty shop/beauty5.jpg" />
-          </div>
-        </div>
-        <div class="item beautyshop">
-          <div class="archive">
-            <img src="./img/archive/beauty shop/beauty6.jpg" />
-          </div>
-        </div>
-        <div class="item beautyshop animation">
-          <div class="archive">
-            <img src="./img/archive/beauty shop/bijoux1.gif" />
-          </div>
-        </div>
-        <div class="item beautyshop animation">
-          <div class="archive">
-            <img src="./img/archive/beauty shop/bijoux2.gif" />
-          </div>
-        </div>
-        <div class="item beautyshop animation">
-          <div class="archive">
-            <img src="./img/archive/beauty shop/bijoux3.gif" />
-          </div>
-        </div>
-        <div class="item beautyshop animation">
-          <div class="archive">
-            <img src="./img/archive/beauty shop/bijoux4.gif" />
-          </div>
-        </div>
-        <div class="item beautyshop">
-          <div class="archive">
-            <img src="./img/archive/beauty shop/celebration1.jpg" />
-          </div>
-        </div>
-        <div class="item beautyshop">
-          <div class="archive">
-            <img src="./img/archive/beauty shop/celebration2.jpg" />
-          </div>
-        </div>
-        <div class="item beautyshop">
-          <div class="archive">
-            <img src="./img/archive/beauty shop/shop1.png" />
-          </div>
-        </div>
-        <div class="item beautyshop">
-          <div class="archive">
-            <img src="./img/archive/beauty shop/shop2.png" />
-          </div>
-        </div>
-        <div class="item beautyshop bw">
-          <div class="archive">
-            <img src="./img/archive/beauty shop/shop3.jpg" />
-          </div>
-        </div>
-        <div class="item beautyshop bw">
-          <div class="archive">
-            <img src="./img/archive/beauty shop/shop4.jpg" />
-          </div>
-        </div>
-        <!--
-        animation
-      -->
-        <div class="item animation bw">
-          <div class="archive">
-            <img src="./img/archive/gif/coeurnoir.gif" />
-          </div>
-        </div>
-        <div class="item animation">
-          <div class="archive">
-            <img src="./img/archive/gif/palmier.gif" />
-          </div>
-        </div>
-        <div class="item animation beautyshop">
-          <div class="archive">
-            <video width="350px" playsinline autoplay loop>
-              <source src="./img/archive/gif/float_animation.mp4" type="video/mp4" />
-            </video>
-          </div>
-        </div>
-        <!--
-        website
-      -->
-      <div class="item web beautyshop">
-        <div class="archive">
-          <img src="./img/archive/website/alixpress.png" />
-          <div class="caption">
-            <p>
-              <a href="https://sophiamsb.github.io/newalixpress/page.html" target="_blank"> <i class="fas fa-link"></i> </a>
-            </p>
-          </div>
-        </div>
+     <div class="archive project">
+      <img src="./img/archive/project/target-cover.jpg" />
+      <div class="link">
+          <a href="projects/target.html"> TARGET - PHOTOBOOK </a>
       </div>
-      <div class="item web phoneme">
-        <div class="archive">
-          <img src="./img/archive/website/erewhon.png" />
-          <div class="caption">
-            <p>
-              <a href="https://sophiamsb.github.io/erehwon/" target="_blank"> <i class="fas fa-link"></i> </a>
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="item web">
-        <div class="archive">
-          <img src="./img/archive/website/hesign.png" />
-          <div class="caption">
-            <p>
-              <a href="http://hesign.com/" target="_blank"> <i class="fas fa-link"></i> </a>
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="item web">
-        <div class="archive">
-          <img src="./img/archive/website/f6living.png" />
-          <div class="caption">
-            <p>
-              <a href="http://f6-living.com/" target="_blank"> <i class="fas fa-link"></i> </a>
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="item web">
-        <div class="archive">
-          <img src="./img/archive/website/cvab.png" />
-          <div class="caption">
-            <p>
-              <a href="http://cva-berlin.com/" target="_blank"> <i class="fas fa-link"></i> </a>
-            </p>
-          </div>
-        </div>
-      </div>
-      <!--
-        project
-      -->
-        <div class="item project">
-          <div class="archive">
-            <img src="./img/archive/project/cup3.jpg" />
-          </div>
-          <div class="caption">
-            <p>
-              <a href="projects/sandt/illycup.html">
-                <i class="fas fa-link"></i>
-              </a>
-            </p>
-          </div>
-        </div>
-        <div class="item project">
-          <div class="archive">
-            <img src="./img/archive/project/target-cover.jpg" />
-            <div class="caption">
-              <p>
-                <a href="projects/target.html"> <i class="fas fa-link"></i> </a>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="item project">
-          <div class="archive">
-            <img src="./img/archive/project/VBposter.jpg" />
-          </div>
-          <div class="caption">
-            <p>
-              <a href="projects/sandt/veniseposter.html">
-                <i class="fas fa-link"></i>
-              </a>
-            </p>
-          </div>
-        </div>
-        <div class="item project web">
-          <div class="archive">
-            <img src="./img/archive/website/thesis.png" />
-          </div>
-          <div class="caption">
-            <p>
-              <a href="projects/thesis.html"">
-                <i class="fas fa-link"></i>
-              </a>
-            </p>
-          </div>
-        </div>
-
-        <div class="item project">
-          <div class="archive">
-            <img src="./img/archive/project/hamja1.jpg" />
-          </div>
-          <div class="caption">
-            <p>
-              <a href="projects/sandt/crack.html"">
-                <i class="fas fa-link"></i>
-              </a>
-            </p>
-          </div>
-        </div>
-        <!--END-GRID-->
-      </div>
-      <footer></footer>
-      <!--END-LAYOUT-->
     </div>
+    <div class="archive project">
+      <img src="./img/archive/project/VBposter.jpg" />
+    <div class="link">
+        <a href="projects/sandt/veniseposter.html"> ALTERNATIVE POSTER  </a>
+    </div>
+   </div>
+   <div class="archive project web">
+    <img src="./img/archive/website/thesis.png" />
+   <div class="link">
+      <a href="projects/thesis.html"> ALMOST DOING WRONG - MASTER THESIS</a>
+   </div>
+  </div>
 
-    <script>
-      var navbtn = document.querySelectorAll(".button"),
+   <div class="archive project">
+    <img src="./img/archive/project/hamja1.jpg" />
+   <div class="link">
+      <a href="projects/sandt/crack.html""> CRACK UP-CRACK DOWN - SPACE DESIGN</a>
+   </div>
+   </div> 
+<!-- end-portfolio -->
+</div>
+</body>
+<script>
+
+  // refreshing page automatically when viewport size change  
+ 
+
+ window.onresize = function(event) {
+ window.location.reload(true);
+}
+
+var href = window.location.href.split("/")
+var html_location = href[href.length-1]
+
+if (window.innerWidth >= 960 && html_location !== "index.html") {
+    window.location = "index.html";
+  
+}
+
+if (window.innerWidth < 960 && html_location !== "index2.html") {
+    window.location = "index2.html";
+    
+}
+  // grid
+const html = [];
+const digits = _.range(1, innerHeight*7.6);
+
+for (const digit of digits) {
+  html.push(`<div class='item'></div>`);
+}
+document.querySelector("#layout").innerHTML = html.join('');
+$('.item').each(function(i){
+  $(this).addClass('n'+(i+1));
+});
+$('div.item.n62').html('<a href="https://docs.google.com/spreadsheets/d/1BuvEoY6SSREJMH4Cf8YFZ0_DbeyL_O1PamMfG3Vx0GY/edit?usp=sharing" target="_blank">cv online</a>');
+$('div.item.n64').html('<a href="mailto:sophia.msaoubi@gmail.com">email</a>');
+$('div.item.n72').html('<p class="flipY">Welcome</p>');
+$('div.item.n114').html('<div class="button is-checked" data-filter="*">All</div>');
+$('div.item.n115').html('<div class="button" data-filter="collage">Collage</div>');
+$('div.item.n116').html('<div class="button" data-filter="animation">Animation</div>');
+$('div.item.n128').html('<div class="button" data-filter="project">Project</div>');
+$('div.item.n129').html('<div class="button" data-filter="drawing">Drawing</div>');
+$('div.item.n130').html('<div class="button" data-filter="web">Website</div>');
+$('div.item.n142').html('<div class="button" style="font-size:14px;" data-filter="bw">Black & white</div>');
+$('div.item.n143').html('<div class="button" data-filter="sport">Sport</div>');
+$('div.item.n156').html('<div class="button" data-filter="beautyshop">Beauty Shop</div>');
+$('div.item.n170').html('<div class="button" data-filter="tech">Technology</div>');
+
+  // filter tag
+var navbtn = document.querySelectorAll(".button"),
         i; // select all items to become filter
 
       [].forEach.call(navbtn, function (al) {
@@ -508,7 +304,7 @@
 
           var match = this.dataset.filter; // store the data-filter of the clicked element in a variable
 
-          var project = document.querySelectorAll(".item"); // create a variable for element to filter
+          var project = document.querySelectorAll(".archive"); // create a variable for element to filter
           [].forEach.call(project, function (el) {
             el.classList.add("fade");
             setTimeout(function () {
@@ -536,37 +332,13 @@
         });
       });
 
-      var items = $(".item");
+   // random
+      var items = $(".archive");
 for(var i = 0; i < items.length; i++){
     var target = Math.floor(Math.random() * items.length -1) + 1;
     var target2 = Math.floor(Math.random() * items.length -1) +1;
     items.eq(target).before(items.eq(target2));
 }
 
-
-      const lightbox = document.createElement("div");
-      lightbox.id = "lightbox";
-      document.body.appendChild(lightbox);
-
-      const images = document.querySelectorAll("img");
-      images.forEach((image) => {
-        image.addEventListener("click", (e) => {
-          lightbox.classList.add("active");
-          const img = document.createElement("img");
-          img.src = image.src;
-
-          while (lightbox.firstChild) {
-            lightbox.removeChild(lightbox.firstChild);
-          }
-          lightbox.appendChild(img);
-        });
-      });
-
-      lightbox.addEventListener("click", (e) => {
-        if (e.target !== e.currentTarget) return;
-        lightbox.classList.remove("active");
-      });
-
-    </script>
-  </body>
+ </script>
 </html>
