@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="icon" type="image/png" href="/assets/img/sparkle.ico" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src=  https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js></script>
+    <title> The Dark One –– Sophia Msaoubi</title>
+  </head>
+<body>
+  <div id="layout-project" class="grid"></div>
+
+  <div class="description">
+    <div class="box">
+      <div class="title">
+        <p>THE DARK ONE</p>
+      </div>
+      <p>Illy Cup</p>
+      <p>Slavs and Tatars Internship</p>
+      <p>2019</p>
+    </div>
+
+    <div class="box">
+      <br>
+      <br>
+      <p>about</p>
+      <p>Slavs and Tatars</p>
+    </div>
+
+    <div class="box">
+      On the occasion of the 58th Venice Biennale, Illy collaborated
+      with artists to design a collection of cups. The illy cup named
+      <em>The Dark One </em>reflects the international nature of Slavs
+      and Tatars’ practice and Its devoted taste for multilingualism and
+      heterogeneity. It has been designed to celebrate languages by the
+      combination of different alphabets lettering the sound ’k’ as an
+      homage to /ˈkɒfi/ (coffee).
+    </div>
+    <div class="box">
+      <a href="https://slavsandtatars.com/news"> Slavs and Tatars </a>is
+      an internationally art collective. The studio practice is based
+      primarily on three activities: exhibitions, publications and
+      lecture-performance. During my internship I was exposed to the
+      various stages leading to a projects’ final. From the early
+      creative process (idea, development, research), to the production
+      (design, installation, etc).
+      <br />
+      I was lucky enough to arrive when Slavs and Tatars had wonderful
+      projects going on: The ‘Dillio Plaza’ Installation for the 58th
+      Venice Biennale exhibition and the curation of the 33rd edition of
+      The Ljubljana Biennial ‘ Crack Up – Crack Down ’.
+    </div>
+
+    <div class="box">
+      <img src="../../img/sandt/cup1.jpg" />
+    </div>
+    <div class="box">
+      <img src="../../img/sandt/cup3.jpg" />
+    </div>
+
+  </div>
+</body>
+<script>
+      // grid
+const html = [];
+const digits = _.range(1, innerHeight);
+
+for (const digit of digits) {
+  html.push(`<div class='item'></div>`);
+}
+document.querySelector("#layout-project").innerHTML = html.join('');
+$('.item').each(function(i){
+  $(this).addClass('b'+(i+1));
+});
+$('div.item.b30').html('<a href="../../index.html" >HERE</a>');
+
+</script>
+</html>

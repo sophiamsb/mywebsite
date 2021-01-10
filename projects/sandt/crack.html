@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="icon" type="image/png" href="/assets/img/sparkle.ico" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src=  https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js></script>
+    <title>Crack Up — Crack Down –– Sophia Msaoubi</title>
+  </head>
+  <body>
+    <div id="layout-project" class="grid"></div>
+    <div class="description">
+      <div class="box">
+        <div class="title">
+          <p>CRACK UP – CRACK DOWN</p>
+        </div>
+        <p>Space Design</p>
+        <p>Slavs and Tatars Internship</p>
+        <p>2019</p>
+      </div>
+  
+      <div class="box">
+        <br>
+        <br>
+        <p>about</p>
+        <p>Slavs and Tatars</p>
+      </div>
+  
+      <div class="box">
+        On the occasion of the 33rd edition of The Ljubljana Biennial,
+        Slavs and Tatars curated an exhibition focused on graphic
+        editions, prints, and other works on paper historically. I was in
+        charge to prepare the installation and production of artists'
+        propositions.
+        <br />
+        -> The mockups and production of Hamja Ahsan’s installation
+        <em> The Aspergian Referundum </em>related to his book
+        <em>Shy Radicals</em>.
+        <br />
+        -> The video installation of the Yugoslav comedy show Top Lista
+        Nadrealista retrospective, which originally ran from late 1984 to
+        1991.
+      </div>
+
+      <div class="box">
+        <a href="https://slavsandtatars.com/news"> Slavs and Tatars </a>is
+        an internationally art collective. The studio practice is based
+        primarily on three activities: exhibitions, publications and
+        lecture-performance. During my internship I was exposed to the
+        various stages leading to a projects’ final. From the early
+        creative process (idea, development, research), to the production
+        (design, installation, etc).
+        <br />
+        I was lucky enough to arrive when Slavs and Tatars had wonderful
+        projects going on: The ‘Dillio Plaza’ Installation for the 58th
+        Venice Biennale exhibition and the curation of the 33rd edition of
+        The Ljubljana Biennial ‘ Crack Up – Crack Down ’.
+      </div>
+  
+      <div class="box">
+        <img src="../../img/sandt/hamja1.jpg" />
+      </div>
+      <div class="box">
+        <img src="../../img/sandt/hamja2.jpg" />
+      </div>
+      <div class="box">
+        <img src="../../img/sandt/hamja3.jpg" />
+        <p>The Aspergian Referundum, Hamja Ahsan – Installation view</p>
+      </div>
+      <div class="box">
+        <img src="../../img/sandt/toplista1.jpg" />
+      </div>
+      <div class="box">
+        <img src="../../img/sandt/toplista2.jpg" />
+        <p>Top Lista Nadrealista retrospective – Installation view</p>
+      </div>
+  
+    </div>
+  </body>
+  <script>
+    // grid
+    const html = [];
+    const digits = _.range(1, innerHeight);
+
+    for (const digit of digits) {
+      html.push(`<div class='item'></div>`);
+    }
+    document.querySelector("#layout-project").innerHTML = html.join("");
+    $(".item").each(function (i) {
+      $(this).addClass("b" + (i + 1));
+    });
+    $("div.item.b30").html('<a href="../../index.html" >HERE</a>');
+  </script>
+</html>
