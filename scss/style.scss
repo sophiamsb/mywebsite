@@ -1,4 +1,5 @@
 @import "layout";
+@import "project";
 @import "portfolio";
 @import "mobile";
 
@@ -42,7 +43,7 @@ body {
   font-size: var(--size-body);
   font-weight: 600;
   color: black;
-  background: var(--white);
+  background: var(--grey);
   width: 100vw;
   overflow-x: hidden;
 }

@@ -1,0 +1,151 @@
+#layout-project {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+}
+
+.b1 {
+  background: var(--yellow);
+}
+.b15 {
+  background: var(--orange);
+}
+.b29 {
+  background: var(--red);
+}
+.b43 {
+  background: var(--purple);
+}
+.b57 {
+  background: var(--blue);
+}
+
+.b2:before {
+  content: "go back";
+}
+.b16:before {
+  content: " to homepage";
+  white-space: nowrap;
+  overflow: auto;
+}
+
+.b30 {
+  color: var(--blue);
+  text-decoration: underline;
+}
+
+.b3 {
+  background: var(--black);
+}
+.b17 {
+  background: var(--neon-green);
+}
+.b31 {
+  background: var(--pink);
+}
+
+.b45 {
+  background: url("./wall/arab.jpg");
+  background-size: 100% 100%;
+}
+.b59 {
+  background: var(--yellow);
+}
+
+.b4 {
+  background: var(--blue);
+}
+.b18 {
+  background: var(--grey);
+}
+.b32 {
+  background: var(--purple);
+}
+.b5 {
+  background: var(--brown);
+}
+.b19 {
+  background: var(--orange);
+}
+.b33 {
+  background: var(--red);
+}
+
+.b9 {
+  background: var(--black);
+}
+.b23 {
+  background: var(--purple);
+}
+.b37 {
+  background: var(--blue);
+}
+
+.b10 {
+  background: var(--pink);
+}
+.b24 {
+  background: var(--grey);
+}
+.b38 {
+  background: var(--brown);
+}
+.b52 {
+  background: var(--neon-green);
+}
+
+.b11 {
+  background-image: url("./wall/pattern01.jpg");
+  background-size: 100% 100%;
+}
+.b68 {
+  background-image: url("./wall/textile01.jpg");
+  background-size: 100% 100%;
+}
+
+.b55 {
+  background-image: url("./wall/pattern02.jpg");
+  background-size: 100%;
+}
+
+.b14 {
+  background-image: url("./wall/pattern03.jpg");
+  background-size: 100%;
+}
+.b28 {
+  background: var(--orange);
+}
+.b42 {
+  background: var(--red);
+}
+.b56 {
+  background: var(--purple);
+}
+.b70 {
+  background: var(--blue);
+}
+.title {
+  color: var(--blue);
+  text-decoration: underline;
+  white-space: nowrap;
+}
+
+.description {
+  width: calc(100vw - 6.4vw);
+  position: absolute;
+  top: 263px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+  margin-left: 7.1%;
+}
+.box {
+  line-height: 24px;
+  width: 35.3vw;
+  margin-bottom: 4.4%;
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}

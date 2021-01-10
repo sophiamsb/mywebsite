@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" type="image/png" href="../img/sparkle.ico" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src=  https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js></script>
+    <title>Target –– Sophia Msaoubi</title>
+  </head>
+  <body>
+    <div id="layout-project" class="grid"></div>
+
+    <div class="description">
+
+      <div class="box">
+        <div class="title">
+          <p>TARGET</p>
+        </div>
+        <p>Photobook</p>
+        <p>2018-2019</p>
+      </div>
+
+      <div class="box">
+        <br>
+        <br>
+        <br>
+      </div>
+
+      <div class="box">
+        This photobook is a walk through the city of Brussels. In the
+        making of
+        <em>Target</em>, I got lost across many streets of Brussels in
+        search of front shops that catch my eyes.
+        <br />
+        From all those lookalike shops, I found many of the same, and also
+        many variations. As you pass different signs and display, you
+        discover different kind of intentions.
+        <br />
+        Big cities resonates with globalization and tourism, It can drives
+        to brutal simplicity and sameness. Nethertheless, cities are
+        gathered by people from diverse horizons. It creates a sense of
+        complexity, and globalization becomes a challenge of the daily
+        street life.
+      </div>
+
+      <div class="box"></div>
+      <div class="box"> <img src="../img/target/target-cover.jpg" /></div>
+      <div class="box"> <img src="../img/target/target001.jpg" /></div>
+      <div class="box"> <img src="../img/target/target01.jpg" /></div>
+      <div class="box"><img src="../img/target/target02.jpg" /></div>
+      <div class="box"><img src="../img/target/target03.jpg" /></div>
+      <div class="box"><img src="../img/target/target04.jpg" /></div>
+      <div class="box"><img src="../img/target/target05.jpg" /></div>
+      <div class="box"><img src="../img/target/target06.jpg" /></div>
+      <div class="box"><img src="../img/target/target07.jpg" /></div>
+      <div class="box"><img src="../img/target/target08.jpg" /></div>
+
+    </div>
+  </body>
+<script>
+    // grid
+const html = [];
+const digits = _.range(1, innerHeight);
+
+for (const digit of digits) {
+html.push(`<div class='item'></div>`);
+}
+document.querySelector("#layout-project").innerHTML = html.join('');
+$('.item').each(function(i){
+$(this).addClass('b'+(i+1));
+});
+$('div.item.b30').html('<a href="../index.html" >HERE</a>');
+
+</script>
+</html>
