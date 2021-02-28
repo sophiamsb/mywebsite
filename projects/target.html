@@ -10,25 +10,15 @@
     <title>Target –– Sophia Msaoubi</title>
   </head>
   <body>
-    <div id="layout-project" class="grid"></div>
+
 
     <div class="description">
-
-      <div class="box">
-        <div class="title">
-          <p>TARGET</p>
-        </div>
+      <div>
+        <p class="title">TARGET</p>
         <p>Photobook</p>
         <p>2018-2019</p>
       </div>
-
-      <div class="box">
-        <br>
-        <br>
-        <br>
-      </div>
-
-      <div class="box">
+      <div class="text">
         This photobook is a walk through the city of Brussels. In the
         making of
         <em>Target</em>, I got lost across many streets of Brussels in
@@ -44,8 +34,9 @@
         complexity, and globalization becomes a challenge of the daily
         street life.
       </div>
+    </div>
 
-      <div class="box"></div>
+    <div class="image">
       <div class="box"> <img src="../img/target/target-cover.jpg" /></div>
       <div class="box"> <img src="../img/target/target001.jpg" /></div>
       <div class="box"> <img src="../img/target/target01.jpg" /></div>
@@ -56,22 +47,8 @@
       <div class="box"><img src="../img/target/target06.jpg" /></div>
       <div class="box"><img src="../img/target/target07.jpg" /></div>
       <div class="box"><img src="../img/target/target08.jpg" /></div>
-
     </div>
+
   </body>
-<script>
-    // grid
-const html = [];
-const digits = _.range(1, innerHeight);
 
-for (const digit of digits) {
-html.push(`<div class='item'></div>`);
-}
-document.querySelector("#layout-project").innerHTML = html.join('');
-$('.item').each(function(i){
-$(this).addClass('b'+(i+1));
-});
-$('div.item.b30').html('<a href="../index.html" >HERE</a>');
-
-</script>
-</html>
+  </html>
