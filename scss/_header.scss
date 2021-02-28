@@ -1,0 +1,115 @@
+/*-- header-- */
+.header{
+  display:flex;
+  justify-content: space-between;
+  margin-top:var(--margin);
+  .welcome{
+  margin-left:calc(var(--margin)*2);
+  }
+  .info{
+    margin-right:var(--margin);
+  }
+}
+
+/*-- tag filter-- */
+.red {
+  background: var(--red);
+  color: var(--white);
+}
+.pink {
+  background: var(--pink);
+}
+.brown {
+  background: var(--brown);
+  color: var(--white);
+}
+.neon {
+  background: var(--neon-green);
+}
+.grey {
+  background: var(--grey);
+}
+.orange {
+  background: var(--orange);
+}
+.black {
+  background: var(--black);
+  color: var(--white);
+}
+.yellow {
+  background: var(--yellow);
+}
+
+.purple {
+  background: var(--purple);
+  color: var(--white);
+}
+.blue {
+  background: var(--blue);
+  color: var(--white);
+}
+
+.tag{
+  display:grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: flex-start;
+  margin:calc(var(--margin)*2);
+}
+
+.button {
+  cursor: pointer;
+  text-align: center;
+  line-height: 19px;
+  height: var(--margin);
+  width:10vw !important;
+  padding:2px;
+}
+
+.button.is-checked {
+  color: var(--hot-pink);
+  background: var(--papaya);
+  &:hover,
+  &.active {
+    color: hotpink;
+    background: papayawhip;
+  }
+}
+
+/*-- animation --*/
+.flipY {
+  animation-name: spin, depth;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 6s;
+  text-align: center;
+  line-height: 50px;
+  font-size:26px;
+  position:fixed;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(-360deg);
+  }
+}
+@keyframes depth {
+  0% {
+    text-shadow: 0 0 black;
+  }
+  25% {
+    text-shadow: 1px 0 black, 2px 0 black, 3px 0 black, 4px 0 black, 5px 0 black;
+  }
+  50% {
+    text-shadow: 0 0 black;
+  }
+  75% {
+    text-shadow: -1px 0 black, -2px 0 black, -3px 0 black, -4px 0 black,
+      -5px 0 black;
+  }
+  100% {
+    text-shadow: 0 0 black;
+  }
+}
