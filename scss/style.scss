@@ -26,18 +26,19 @@ html {
   --gap-mobile: 7%;
   --gap-thesis: 15em;
   --yellow: yellow;
-  --orange: orange;
+  --orange: orangered;
   --red: red;
   --purple: rgb(102, 0, 255);
   --blue: blue;
   --black: black;
   --neon-green: rgb(26, 255, 0);
   --pink: rgb(255, 0, 212);
-  --grey: rgba(0, 0, 0, 0.1);
+  --grey: lightSlateGrey;
   --brown: #964b00;
   --white: white;
   --hot-pink: hotpink;
   --papaya: papayawhip;
+  --background: white;
 }
 
 body {
@@ -45,7 +46,7 @@ body {
   font-size: var(--size-body);
   font-weight: 600;
   color: black;
-  background: var(--white);
+  background: var(--background);
   width: 100vw;
   overflow-x: hidden;
 }
