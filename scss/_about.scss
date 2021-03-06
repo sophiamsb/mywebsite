@@ -1,0 +1,16 @@
+.contact , .cv{
+margin:calc(var(--margin)*2);
+}
+
+table{
+border-collapse: collapse;
+}
+
+td{
+        padding-bottom:var(--margin);
+        padding-right:var(--margin);
+        vertical-align: top;
+        span{
+                font-weight:300;
+        }
+}

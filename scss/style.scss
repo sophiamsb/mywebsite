@@ -3,6 +3,7 @@
 @import "portfolio";
 @import "mobile";
 @import "thesis";
+@import "about";
 
 /*_______________General_________________*/
 
@@ -42,7 +43,7 @@ html {
 }
 
 body {
-  font-family: "arial ", sans-serif;
+  font-family: "Helvetica Neue", sans-serif;
   font-size: var(--size-body);
   font-weight: 600;
   color: black;
