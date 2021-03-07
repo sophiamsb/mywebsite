@@ -1,0 +1,64 @@
+
+
+@media only screen and (max-width: 600px) {
+
+        body {
+                font-size: var(--size-body-mobile) !important;       
+        }
+
+        .header{
+                margin-bottom:calc(var(--margin)*5);
+                .info{
+                        width:60%;
+                        margin-right:0 !important;   
+                      }
+              }
+
+        .button {
+                height: calc(var(--margin)*4);
+                width:100% !important;
+                padding-bottom:0px !important;
+              }
+         .link {
+            font-size: 10px;
+              }
+              .portfolio {
+                margin-top:calc(var(--margin)*4);
+
+                .archive{
+                width:29vw;
+                margin-bottom: 10px;
+                margin-right:10px;
+                }
+        }
+
+        .text{
+                margin-top: var(--margin);
+                 width:calc(100vw -  (var(--margin)*2.5))!important;
+                }
+        
+
+  .box{
+    width:calc(50vw - ((var(--margin)*2) + 10px)) !important;
+    margin-right:10px !important;
+    margin-bottom:10px!important;
+
+    p{
+        font-size:10px;
+    }
+  }
+
+
+
+  .image {
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:flex-start !important;
+        margin-left: calc(var(--margin)*2);
+  }      
+
+        
+      }
+
+
+

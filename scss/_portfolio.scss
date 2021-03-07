@@ -1,5 +1,5 @@
 .portfolio {
-  width: calc(100vw - var(--gap));
+  width: calc( 100vw - (var(--margin)*2)) ;
   position: absolute;
   display: flex;
   flex-wrap: wrap;

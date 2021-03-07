@@ -59,10 +59,11 @@
 .button {
   cursor: pointer;
   text-align: center;
-  line-height: 19px;
+  vertical-align: top;
   height: var(--margin);
   width:10vw !important;
-  padding:2px;
+  padding-bottom:3px;
+
 }
 
 .button.is-checked {
