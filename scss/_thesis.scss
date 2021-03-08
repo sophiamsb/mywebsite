@@ -3,10 +3,10 @@
   --size-h1: 3.2rem;
   --size-h2: 2rem;
   --size-h3: 1.3rem;
-  --size-caption: 0.8rem;
+  --size-caption: 0.7rem;
   --line-height-body: 1.3em;
   --line-height-title: 4.5em;
-  --gap-thesis: 15em;
+  --gap-thesis: 17em;
 }
 
 @mixin background2 {
@@ -17,27 +17,30 @@
 .container {
   background-color: white;
   overflow-x: hidden;
-  width: 100%;
+  width: calc(100vw - var(--gap-thesis));
+  display:grid;
+  justify-content:center;
+
+  div{
+    width:50vw;
+    margin-left: var(--gap-thesis);
+  }
 }
+
 .title-thesis{
   position: relative;
   height: 300px;
   line-height: var(--line-height-title);
-  padding-top: var(--gap);
-
+  padding-top:80px;
 
   p {
     font-size: var(--size-h1);
-    background-clip: invert(0.7);
     text-align: center;
     text-transform: uppercase;
-    width: fit-content;
-    height: fit-content;
-    text-align: center;
     margin-left: auto;
     margin-right: auto;
     color: blue;
-    filter: drop-shadow(0.07em 0.07em rgb(255, 0, 21));
+    filter: drop-shadow(0.07em 0.07em red);
   }
 }
 
@@ -82,52 +85,45 @@
 .headline {
   position: relative;
   text-align: center;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: calc(var(--gap) );
   width: fit-content;
   height: 80px;
-  display: block;
+  margin-top: calc(var(--margin)*2);
 
   p {
-    padding: 0.1em;
     font-size: var(--size-h2);
-    color: black;
     text-decoration-line: underline;
     text-decoration-style: wavy;
   }
 }
 
 .title2 {
-  text-align: center;
   font-size: var(--size-h3);
-  height: 80px;
+  height: fit-content;
+  text-align: left;
+  margin-bottom: var(--margin);
   text-decoration-line: underline;
   text-decoration-style: wavy;
+  
 }
 
 .textblock {
   position: relative;
   display: block;
   font-size: var(--size-body);
-  margin-left: var(--gap-thesis);
-  margin-right: var(--gap-thesis);
-  .hypertext {
-    position: absolute;
-    height: auto;
-    width: 15vw;
-    right: -27%;
-    top: 0;
-    font-size: 0.5em;
-    word-wrap: break-word;
-    line-height: 1.5em;
-    margin-block-end: 20%;
-    text-shadow: 2px 2px 5px rgba(0, 28, 218, 0.566);
-    animation: float;
-    animation-duration: 6s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-  }
+}
+.hypertext {
+  position: absolute;
+  height: auto;
+  width: 15vw;
+  font-size: var(--size-caption);
+  word-wrap: break-word;
+  line-height: 1.5em;
+  margin-block-end: 20%;
+  text-shadow: 2px 2px 5px rgba(20, 255, 39, 0.566);
+  animation: float;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 
 @keyframes float {
@@ -147,17 +143,17 @@
 
 .citation {
   font-weight: bold;
-  margin: 110px;
   padding: 2em;
   line-height: 1.6em;
   border: 1px solid;
   background-color: #fcfc9a;
+  margin-top: calc(var(--margin)*2);
+  margin-bottom: calc(var(--margin)*2);
 
   .caption {
     margin: 0;
     padding: 1em;
     line-height: 1.6em;
-
     float: right;
     color: grey;
     font-size: 0.5em;
@@ -205,7 +201,6 @@
 .picture {
   position: relative;
   z-index: 1;
-  margin: 110px;
   img {
     width: 100%;
   }
@@ -218,14 +213,16 @@
   }
 }
 .picture2 {
-  width: 80%;
-  height: fit-content;
-  margin: 110px;
 
   .knockoff {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    margin:0;
+    align-items:center;
+    
+    img{
+      width:12vw; 
+      margin:2vw;
+    }
   }
   .equal {
     height: 20vh;
@@ -240,7 +237,7 @@
   .caption {
     text-align: right;
     color: grey;
-    font-size: 0.5em;
+    font-size: var(--size-caption);
     width: 80vw;
     position: relative;
   }

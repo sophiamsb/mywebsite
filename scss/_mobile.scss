@@ -57,6 +57,20 @@
         margin-left: calc(var(--margin)*2);
   }      
 
+
+  .container {
+        width: calc(100vw - (var(--margin)*4)) !important;
+        margin: calc(var(--margin)*2)!important;
+        div{
+          width:fit-content!important;
+          margin-left: 0 !important;
+        }
+      }
+
+ .spectrum{
+         display:none;
+ }
+
         
       }
 
