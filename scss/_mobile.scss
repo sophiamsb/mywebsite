@@ -71,8 +71,11 @@
          display:none;
  }
 
-        
-      }
+}
 
-
-
+@media only screen and (min-width: 1600px) {
+  .button {
+            width:7vw !important;
+             height: calc(var(--margin)/1.3);
+        }
+}
